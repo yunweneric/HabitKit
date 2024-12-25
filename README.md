@@ -1,6 +1,6 @@
 # Habitkit
 
-HabitKit is a habit tracker application. The purpose of this application was to show that it is possible to convert your mobile applications into web presentations.
+HabitKit is a habit tracker application. The purpose of this application is to show that it is possible to convert your mobile applications into web presentations.
 
 
 ![Screenshot_20241224-224824](https://github.com/user-attachments/assets/b7c85395-2a39-40e4-acfe-60dd73c00b0d)
