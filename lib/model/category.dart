@@ -1,16 +1,23 @@
+import 'package:equatable/equatable.dart';
 import 'package:habitkit/utils/assets.dart';
 
-class HabitCategoryModel {
+class HabitCategoryModel extends Equatable {
   final String svgAsset;
   final String name;
 
-  HabitCategoryModel({
+  const HabitCategoryModel({
     required this.svgAsset,
     required this.name,
   });
+
+  @override
+  List<Object?> get props => [
+        svgAsset,
+        name,
+      ];
 }
 
-List<HabitCategoryModel> categoryList = [
+List<HabitCategoryModel> categoryList = const [
   HabitCategoryModel(
     svgAsset: Appassets.art,
     name: 'Art',

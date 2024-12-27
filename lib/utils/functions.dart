@@ -19,7 +19,7 @@ Map<DateTime, int> generateEvenDateTimeMap(int count) {
     // Generate a random DateTime
     final now = DateTime.now();
     final dateTime = DateTime(now.year, now.month, now.day)
-        .add(Duration(days: random.nextInt(365)));
+        .add(Duration(days: random.nextInt(2)));
 
     // Adjust DateTime to ensure it has an even second value
     final evenDateTime = dateTime.day % 2 == 0

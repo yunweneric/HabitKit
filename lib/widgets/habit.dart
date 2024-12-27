@@ -6,7 +6,7 @@ import 'package:vector_graphics/vector_graphics.dart';
 import 'package:habitkit/model/habit.dart';
 import 'package:habitkit/utils/colors.dart';
 
-import '../utils/functions.dart';
+import '../utils/global_variables.dart';
 
 class HabitCard extends StatelessWidget {
   const HabitCard({super.key, required this.habitModel});
@@ -15,7 +15,6 @@ class HabitCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final evenDateTimeMap = generateEvenDateTimeMap(160);
     return Container(
       padding: const EdgeInsets.all(8),
       width: MediaQuery.sizeOf(context).width,

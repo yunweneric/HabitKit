@@ -12,13 +12,12 @@ class FilterHabitCategoryCubit extends Cubit<FilterHabitCategoryState> {
           const FilterHabitCategoryState(
             filters: [],
             habit: [],
+            isLoading: false,
           ),
         );
 
-  void loadHabitCategories() {
-    emit(
-      state.copyWith(habit: habitList),
-    );
+  void loadHabitCategories() async {
+    emit(state.copyWith(habit: habitList, isLoading: false));
   }
 
   void removefromFilter({required String category}) {
@@ -28,14 +27,15 @@ class FilterHabitCategoryCubit extends Cubit<FilterHabitCategoryState> {
     emit(state.copyWith(filters: newlist));
   }
 
-  void filterHabitCategory({required String category}) {
+  void filterHabitCategory({required String category}) async {
+    await Future.delayed(const Duration(milliseconds: 500));
     final newlist = [category, ...state.filters];
-    emit(state.copyWith(filters: newlist));
+    emit(state.copyWith(filters: newlist, isLoading: false));
     List<HabitModel> matchedCategories = habitList;
     matchedCategories.retainWhere((data) => data.category
         .map((categories) => categories.toLowerCase())
         .contains(category.toLowerCase()));
 
-    emit(state.copyWith(habit: matchedCategories));
+    emit(state.copyWith(habit: matchedCategories, isLoading: false));
   }
 }

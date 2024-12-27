@@ -1,9 +1,11 @@
 import 'dart:ui';
 
+import 'package:equatable/equatable.dart';
+
 import '../utils/assets.dart';
 import '../utils/colors.dart';
 
-class HabitModel {
+class HabitModel extends Equatable {
   final String title;
   final String subtitle;
   final String svgAsset;
@@ -11,18 +13,22 @@ class HabitModel {
   final Color secondaryHexColor;
   final List<String> category;
 
-  HabitModel(
+  const HabitModel(
       {required this.title,
       required this.subtitle,
       required this.svgAsset,
       required this.primaryHexColor,
       required this.secondaryHexColor,
       required this.category});
+
+  @override
+  List<Object?> get props =>
+      [title, subtitle, svgAsset, primaryHexColor, secondaryHexColor, category];
 }
 
 List<HabitModel> habitList = [
   HabitModel(
-    category: ['Fitness', 'Health', 'Morning'],
+    category: const ['Fitness', 'Health', 'Morning'],
     primaryHexColor: AppColors.appPurple,
     secondaryHexColor: AppColors.appPurpeSecondary,
     subtitle: 'Meditate daily for 15 minutes',
@@ -30,7 +36,7 @@ List<HabitModel> habitList = [
     title: 'Meditation',
   ),
   HabitModel(
-    category: ['Health', 'Fitness', 'Social'],
+    category: const ['Health', 'Fitness', 'Social'],
     primaryHexColor: AppColors.appPurple2,
     secondaryHexColor: AppColors.appPurple2Secondary,
     subtitle: 'Weightlifting, running or similar',
@@ -38,7 +44,7 @@ List<HabitModel> habitList = [
     title: 'Sport',
   ),
   HabitModel(
-    category: ['Morning', 'Health', 'Fitness'],
+    category: const ['Morning', 'Health', 'Fitness'],
     primaryHexColor: AppColors.appYellow,
     secondaryHexColor: AppColors.appYellowSecondary,
     subtitle: 'Go for a jog every other day',
@@ -46,7 +52,7 @@ List<HabitModel> habitList = [
     title: 'Running',
   ),
   HabitModel(
-    category: ['Evening', 'Health'],
+    category: const ['Evening', 'Health'],
     primaryHexColor: AppColors.appCyan,
     secondaryHexColor: AppColors.appCyanSecondary,
     subtitle: "Eat healthy food and don't overeat",
