@@ -1,16 +1,13 @@
-# habitkit
+# Habitkit
 
-A new Flutter project.
+HabitKit is a habit tracker application. The purpose of this application is to show that it is possible to convert your mobile applications into web presentations.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+![Screenshot_20241224-224824](https://github.com/user-attachments/assets/b7c85395-2a39-40e4-acfe-60dd73c00b0d)
 
-A few resources to get you started if this is your first Flutter project:
+![Screenshot_20241224-223353](https://github.com/user-attachments/assets/05ff14b9-3c6a-4946-ba33-aeaafeb5b372)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screenshot_20241224-223501](https://github.com/user-attachments/assets/98b8fc1b-30b0-4fb7-a9c0-884779ab6263)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_20241224-223517](https://github.com/user-attachments/assets/292afbdb-a50f-478c-ad4f-2cca16e7a21d)
+
