@@ -1,20 +1,19 @@
 # HabitKit 📱
 
-A modern, cross-platform habit tracking application built with Flutter that demonstrates the power of converting mobile applications into web presentations.
+A modern, cross-platform habit tracking application built with Flutter that helps you build and maintain positive habits with streak tracking similar to GitHub's contribution graph.
 
 ## 🚀 Features
 
 - **Cross-Platform**: Works on iOS, Android, Web, and Desktop
 - **Beautiful UI**: Modern Material Design 3 with custom dark theme
 - **Category Management**: Organize habits by categories like Fitness, Health, Study, Work, and more
+- **Streak Tracking**: Track your daily progress with visual streak indicators
 - **Animated Interfaces**: Smooth animations for category selection and habit lists
 - **State Management**: Built with BLoC pattern for robust state management
-- **Device Preview**: Built-in device preview for testing different screen sizes
-- **Vector Graphics**: Optimized SVG assets for crisp visuals
 
 ## 🎯 Purpose
 
-HabitKit serves as a demonstration project showcasing how Flutter applications can be seamlessly converted from mobile to web presentations while maintaining a native feel and performance across all platforms.
+HabitKit is designed to help users build consistent habits by providing a clean, intuitive interface for tracking daily activities. The streak system motivates users to maintain their habits daily, similar to how GitHub's contribution graph encourages regular commits.
 
 ## 🛠️ Tech Stack
 
@@ -143,9 +142,9 @@ HabitModel(
 ),
 ```
 
-## 🌐 Web Deployment
+## 📊 Streak System
 
-The application is optimized for web deployment and includes device preview functionality for testing responsive design across different screen sizes.
+The app features a streak tracking system similar to GitHub's contribution graph, where users can see their daily habit completion patterns. This visual feedback helps motivate consistent behavior and build lasting habits.
 
 ## 📄 License
 
